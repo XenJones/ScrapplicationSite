@@ -1,0 +1,36 @@
+$black-olive: #403d39ff;
+$earth-yellow: #eaba6bff;
+$bittersweet: #ed6a5aff;
+$blue-munsell: #49909eff;
+$grey: #bfb9b9;
+
+$theme-colors: (
+        "blue": $blue-munsell,
+        "orange": $bittersweet,
+        "yellow": $earth-yellow,
+        "black": $black-olive,
+        "grey": #bebebeff,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+nav{
+  background-color: #{transparentize($blue-munsell, 0.4)};;
+}
+
+body{
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+.opacity-10{
+  opacity: 0.1;
+}
